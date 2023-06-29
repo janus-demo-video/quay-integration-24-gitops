@@ -53,9 +53,6 @@ spec:
         name: update-deployment
       runAfter:
         - quay-tag-promote
-      workspaces:
-        - name: images-url
-          workspace: images-url
 {{- else }}
     - name: copy-image-tag
       params:
