@@ -9,4 +9,4 @@ spec:
     - name: destination-tag
       value: $(body.ref)
     - name: namespace
-      value: nonprod
+      value: quay-integration-24-preprod
