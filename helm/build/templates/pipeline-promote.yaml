@@ -52,7 +52,7 @@ spec:
         kind: Task
         name: update-deployment
       runAfter:
-        - quay-tag-latest
+        - quay-tag-promote
       workspaces:
         - name: images-url
           workspace: images-url
