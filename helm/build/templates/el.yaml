@@ -28,7 +28,7 @@ spec:
             filter: "body.ref_type == 'tag' && body.ref.startsWith('r')"
             overlays:
               - key: source
-                expression: "body.ref.replace('r','v')"
+                expression: body.ref.replace("r","v")
       bindings:
         - ref: tag-binding-prod
       template:
